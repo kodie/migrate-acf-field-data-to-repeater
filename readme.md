@@ -20,14 +20,14 @@ $ wp plugin activate migrate-acf-field-data-to-repeater
 
  - `repeater_slug` - The "name" field for the repeater. Example: `items`
  - `repeater_field_id` - This is the field ID for the repeater. To find this, you'll need to go to a page on the WordPress backend that has the field, inspect the element, and it should be in the `for` attribute for the repeater label prepended with "field_". Example: `636d5921b3451`
- - `field_slug` - The "name" field for the field(s) you wish to move into the repeater. Seperate multiple slugs with a comma. Example: `item_title,item_description`
+ - `field_slug` - The "name" field for the field(s) you wish to move into the repeater. Seperate multiple slugs with a space. Example: `item_title item_description`
  - `--dry-run` - Set this option to display the results without actually making any changes.
- - `--post_type` and `--include` - You can actually use any options to pass to the [get_posts](https://developer.wordpress.org/reference/functions/get_posts) function. Example: `--post_type=page --include=47,82 --author_name=bob`
+ - `--post_type` and `--include` - You can actually use any options to pass to the [get_posts](https://developer.wordpress.org/reference/functions/get_posts) function. Seperate multiple values with a comma. Example: `--post_type=page --include=47,82 --author_name=bob`
 
 
 ## Thanks
 
-This plugin was originally inspired by [this gist](https://gist.github.com/gthayer/0d71df7cb325549cc37661f1c9378fd9) by [@gthayer](https://github.com/gthayer).
+This plugin was originally inspired by [this gist](https://gist.github.com/gthayer/0d71df7cb325549cc37661f1c9378fd9) by [@](https://github.com/gthayer).
 
 
 ## License
