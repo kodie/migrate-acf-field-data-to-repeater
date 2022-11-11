@@ -1,0 +1,29 @@
+{
+  "name": "kodie/migrate-acf-field-data-to-repeater",
+  "description": "A WordPress plugin that adds the `wp migrate-acf-field-data-to-repeater` command to WP CLI. That command renames the keys of metadata so that they are prepended with the repeater slug so that the fields can be moved into a repeater along with their data.",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "acf",
+    "advance",
+    "custom",
+    "data",
+    "field",
+    "migrate",
+    "move",
+    "repeater",
+    "wordpress",
+    "wp"
+  ],
+  "authors": [
+    {
+      "name": "Kodie Grantham",
+      "email": "kodie.grantham@gmail.com",
+      "homepage": "https://kodieg.com"
+    }
+  ],
+  "homepage": "https://github.com/kodie/migrate-acf-field-data-to-repeater",
+  "license": "MIT",
+  "require": {
+    "php": "^7.2|^8.0"
+  }
+}
