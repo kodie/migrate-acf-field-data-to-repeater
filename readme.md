@@ -8,13 +8,6 @@ For example: I have a field created with ACF named `item_description` and I have
 
 Use this command after you have already created your new repeater field and moved the fields you with to migrate into the repeater from the Custom Fields page.
 
-Easily install and activate the plugin via:
-
-```sh
-$ composer install kodie/migrate-acf-field-data-to-repeater
-$ wp plugin activate migrate-acf-field-data-to-repeater
-```
-
 
 ## `wp migrate-acf-field-data-to-repeater <repeater_slug> <repeater_field_id> <field_slug...> [--dry-run] [--post_type=POST_TYPE] [--include=POST_ID,POST_ID,POST_ID...]`
 
@@ -23,6 +16,22 @@ $ wp plugin activate migrate-acf-field-data-to-repeater
  - `field_slug` - The "name" field for the field(s) you wish to move into the repeater. Seperate multiple slugs with a space. Example: `item_title item_description`
  - `--dry-run` - Set this option to display the results without actually making any changes.
  - `--post_type` and `--include` - You can actually use any options to pass to the [get_posts](https://developer.wordpress.org/reference/functions/get_posts) function. Seperate multiple values with a comma. Example: `--post_type=page --include=47,82 --author_name=bob`
+
+Command example:
+
+```sh
+$ wp migrate-acf-field-data-to-repeater items 636d5921b3451 item_title item_description --post_type=page --include=27
+```
+
+Easily install, activate, and use the plugin via:
+
+```sh
+$ composer require kodie/migrate-acf-field-data-to-repeater
+$ wp plugin activate migrate-acf-field-data-to-repeater
+$ wp migrate-acf-field-data-to-repeater ...
+$ wp plugin deactivate migrate-acf-field-data-to-repeater
+$ composer remove kodie/migrate-acf-field-data-to-repeater
+```
 
 
 ## Thanks
