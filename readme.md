@@ -36,7 +36,7 @@ $ composer remove kodie/migrate-acf-field-data-to-repeater
 
 ## Thanks
 
-This plugin was originally inspired by [this gist](https://gist.github.com/gthayer/0d71df7cb325549cc37661f1c9378fd9) by [@](https://github.com/gthayer).
+This plugin was originally inspired by [this gist](https://gist.github.com/gthayer/0d71df7cb325549cc37661f1c9378fd9) by [@gthayer](https://github.com/gthayer).
 
 
 ## License
